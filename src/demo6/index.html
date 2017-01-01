@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vudejs demo</title>
+</head>
+<body>
+	<script src="../vue.js"></script>
+
+	<div id="app5">
+	  <p>{{message}}</p>
+	  <input type="text" v-model="message">
+	</div>
+
+	<script>
+		var app5 = new Vue({
+			el: '#app5',
+			data: {
+				message: 'This is message!!'
+			}
+		});
+	</script>
+</body>
+</html>

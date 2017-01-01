@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vudejs demo</title>
+</head>
+<body>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+	<div id="app3">
+	  <p v-if="seen">
+	  	Now, you can see me!
+	  </p>
+	</div>
+
+	<script>
+		var app3 = new Vue({
+			el: '#app3',
+			data: {
+				seen: true
+			}
+		});
+	</script>
+</body>
+</html>
